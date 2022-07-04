@@ -36,7 +36,7 @@ def uno(message):
     else:
         pass
 
-        if message.from_user.id==800053999 or message.from_user.id==908927889:
+        if message.from_user.id==233473811 or message.from_user.id==908927889 or message.from_user.id==1707358502:
             try:
                 if message.text.lower()== '/start' or message.text.lower()=='/restart':
                     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAEEmSNibfJC8FHw-adNCTSJ-ZnhzlDJiwACFAADe8B9Ezjtl9FtGtV5JAQ")
@@ -53,7 +53,7 @@ def uno(message):
                     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAEEmSVibfNdrDwmfDHo8z2nZuPMFu-XDQACQgIAAnvAfRMvCaa3aK6FnyQE")
                 elif message.text.lower()=='поблагодарить моего разработчика':
                     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAEEmU1ibgnVcQenGcxw36HoL3BX0q1vUwACQgIAAnvAfRMvCaa3aK6FnyQE")
-                    bot.send_message(message.chat.id, text=f"<a href='https://t.me/Original_Ariel'>Думаю ему будет гораздо приятнее, если ты напишешь ему в лс:)</a>", parse_mode='html')
+                    bot.send_message(message.chat.id, text=f"<a href='https://t.me/Original_Ariel'>Думаю ему будет гораздо приятнее, если вы напишете ему в лс:)</a>", parse_mode='html')
                     bot.send_message(908927889, f'ID: {message.from_user.id} \nFirst name = {message.from_user.first_name} \nLast name = {message.from_user.last_name}\nUsername = {message.from_user.username}\nTime = {strftime( "%Y.%m.%d", gmtime() )}\nHour = {strftime( "%H:%M:%S", gmtime() )} \nMessage = Благодарность', parse_mode='html')
                 elif message.text.lower()=='вернуться назад🔙':
                     backu=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -70,11 +70,11 @@ def uno(message):
                 elif message.text.lower()=='получить поддержку':
                     bot.send_message(908927889, f'ID: {message.from_user.id} \nFirst name = {message.from_user.first_name} \nLast name = {message.from_user.last_name}\nUsername = {message.from_user.username}\nTime = {strftime( "%Y.%m.%d", gmtime() )}\nHour = {strftime( "%H:%M:%S", gmtime() )} \nMessage = поддержку вызвала', parse_mode='html')
                     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAEEmUlibgbLvYmtb_Xk6MB957dK0gisawACMAADe8B9E-gE9BzCedyGJAQ")
-                    bot.send_message(message.chat.id, text='''Если ты нажала на эту кннопку, думаю тебе сейчас нелегко, или просто очень скучно.
-                    \nТем не менее, я хочу чтобы ты знала следующее:\n
-                    \nТрудности будут всегда, особенно с такой пыткой как IELTS, но ты должна побороть это чувство, ведь в конце придет освобождение. Придет тот самый вкус победы, ради которого стоило так стараться.
-                    \nТы обязательно достигнешь желаемого.
-                    \nА щас вставай епт и учись, харэ жалеть себя.''')
+                    bot.send_message(message.chat.id, text='''Если вы нажали на эту кнопку, думаю вам сейчас нелегко, или просто очень скучно.
+                    \nТем не менее, я желаю вам терпения и прошу знать следующее:\n
+                    \nВы уже должны были привыкнуть к трудностям, как никак вам удалось стать лучшим куратором за всю историю лицея, что аж из-за вас в этом году вообще никому эту номинацию не дали.
+                    \nДля подростков, IELTS является чем то вроде самого важного экзамена десятилетия. Но с вашим опытом, этот экзамен можно рассмотреть просто как подготовка у очередному уроку с 2ТН3-невыносимо, но, когда закончите, станет легче.
+                    \nА щас вставайте епт и учитесь, харэ жалеть себя.''')
                     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAEEmUdibga-PD-TYRKTVAtZjC0ah8B98gACGQADe8B9E4fn-su6s6Q4JAQ")
                 elif message.text.lower()=='/get' or message.text.lower()=='получить книги':
                     books=types.ReplyKeyboardMarkup(resize_keyboard=True)
@@ -149,7 +149,8 @@ http://www.ieltscdt.com/check-ielts-essay.php''')
                 bot.send_message(908927889, text='Че то пошло не по плану')
         elif message.from_user.id==1412330377:
             try:
-                bot.send_message(800053999, text=message.text)
+                bot.send_message(233473811, text=message.text)
+                bot.send_message(1707358502, text=message.text)
                 bot.send_message(message.chat.id, text='Sent!')
             except:
                 bot.send_message(908927889, text='Че то пошло не по плану')
